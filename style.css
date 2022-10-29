@@ -1,0 +1,186 @@
+@keyframes bgcolor {
+    0% {
+        background-image: linear-gradient(rgb(28, 14, 62), rgb(18,18,18) 20%);
+    }
+    
+    30% {
+        background-image: linear-gradient(rgb(8, 79, 47), rgb(18,18,18) 20%);
+    }
+    
+    60% {
+        background-image: linear-gradient(rgb(75, 8, 79), rgb(18,18,18) 20%);
+    }
+    
+    90% {
+        background-image: linear-gradient(rgb(79, 8, 8), rgb(18,18,18) 20%);
+    }
+    
+    100% {
+        background-image: linear-gradient(rgb(79, 27, 8), rgb(18,18,18) 20%);
+    }
+}
+
+@keyframes bg-color {
+    0% {
+        background-color: rgb(28, 14, 62)
+    }
+
+    30% {
+        background-color: rgb(8, 79, 47)
+    }
+
+    60% {
+        background-color: rgb(75, 8, 79)
+    }
+
+    90% {
+        background-color: rgb(79, 8, 8)
+    }
+
+    100% {
+        background-color: rgb(79, 27, 8)
+    }
+}
+
+.changingBg {
+    -webkit-animation: bg-color 20s infinite;
+    animation: bg-color 9.5s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.changing-bg {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.main-container {
+    /* height: auto; */
+    background-color: #121212;
+}
+
+#nav {
+    /* background-color: #181818; */
+    height: 4rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bg {
+    background-color: #272727;
+    transition: background-color 1s;
+}
+
+.transparent-bg {
+    background-color: #00000000;
+}
+
+.side-bar {
+    background-color: #000000;
+    width: 241px!important;
+    height: 40rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.play-media {
+    height: 90px;
+    background-color: #181818;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.main-bar {
+    width: 100%;
+}
+
+.second-main {
+    height: 100vh;
+    background-color: #121212;
+}
+
+#content-container > div:first-child {
+    height: 17rem;
+}
+
+.braces > span:nth-of-type(2) {
+    position: relative;
+    right: 4px;
+}
+
+.braces > span > .fa-circle-chevron-left {
+    font-size: 2rem;
+    position: relative;
+    color: black;
+}
+
+.braces > span > .fa-caret-left {
+    font-size: 2rem;
+    position: relative;
+    left: 25px;
+    color: white;
+}
+
+.braces > span > .fa-circle-chevron-right {
+    font-size: 2rem;
+    position: relative;
+    color: black;
+}
+
+.braces > span > .fa-caret-right {
+    font-size: 2rem;
+    position: relative;
+    left: 25px;
+    color: white;
+}
+
+.dropdown-nav > a{
+    width: 11.2rem;
+    border-radius: 1em;
+    padding: 1.2px;
+    background: #3a3737;
+    border-color: #3a3737;
+}
+
+.dropdown-nav > a > .fa-circle-user {
+    font-size: 1.7rem;
+    margin-right: 0.3em;
+}
+
+.dropdown-nav .dropdown-toggle::after {
+    display: inline;
+    margin-left: 0.5em;
+    position: relative;
+    top: 0.7em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-bottom: 0;
+    border-left: .4em solid transparent;
+}
+
+.dropdown-nav > a > span {
+    width: 7em;
+}
+
+.dropdown-nav > ul {
+    width: 12.4em;
+    border-radius: 0.3em;
+    padding: 0.2em;
+}
+
+.dropdown-nav  ul  li > a {
+    font-size: 0.875rem;
+    padding: 10px 8px 10px 12px;
+}
+
+.dropdown-nav > ul > li > a > i {
+    font-size: 18px;
+}
