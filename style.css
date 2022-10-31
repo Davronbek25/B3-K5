@@ -1,22 +1,24 @@
+@import url("spotify-fonts.css");
+
 @keyframes bgcolor {
     0% {
-        background-image: linear-gradient(rgb(28, 14, 62), rgb(18,18,18) 20%);
+        background-image: linear-gradient(rgb(28, 14, 62), rgb(18, 18, 18) 20%);
     }
-    
+
     30% {
-        background-image: linear-gradient(rgb(8, 79, 47), rgb(18,18,18) 20%);
+        background-image: linear-gradient(rgb(8, 79, 47), rgb(18, 18, 18) 20%);
     }
-    
+
     60% {
-        background-image: linear-gradient(rgb(75, 8, 79), rgb(18,18,18) 20%);
+        background-image: linear-gradient(rgb(75, 8, 79), rgb(18, 18, 18) 20%);
     }
-    
+
     90% {
-        background-image: linear-gradient(rgb(79, 8, 8), rgb(18,18,18) 20%);
+        background-image: linear-gradient(rgb(79, 8, 8), rgb(18, 18, 18) 20%);
     }
-    
+
     100% {
-        background-image: linear-gradient(rgb(79, 27, 8), rgb(18,18,18) 20%);
+        background-image: linear-gradient(rgb(79, 27, 8), rgb(18, 18, 18) 20%);
     }
 }
 
@@ -66,6 +68,7 @@
     height: 4rem;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 .nav-bg {
@@ -79,7 +82,7 @@
 
 .side-bar {
     background-color: #000000;
-    width: 241px!important;
+    width: 18.2rem !important;
     height: 40rem;
     position: sticky;
     position: -webkit-sticky;
@@ -94,6 +97,7 @@
     left: 0;
     right: 0;
     z-index: 5;
+    border-top: 1px solid #3a3737;
 }
 
 .main-bar {
@@ -105,50 +109,61 @@
     background-color: #121212;
 }
 
-#content-container > div:first-child {
+#content-container>div:first-child {
     height: 17rem;
 }
 
-.braces > span:nth-of-type(2) {
+.braces {
+    margin-left: 1rem;
+}
+
+.braces>span:nth-of-type(2) {
     position: relative;
     right: 4px;
 }
 
-.braces > span > .fa-circle-chevron-left {
+.braces>span>.fa-circle-chevron-left {
     font-size: 2rem;
     position: relative;
     color: black;
 }
 
-.braces > span > .fa-caret-left {
+.braces>span>.fa-caret-left {
     font-size: 2rem;
     position: relative;
     left: 25px;
     color: white;
 }
 
-.braces > span > .fa-circle-chevron-right {
+.braces>span>.fa-circle-chevron-right {
     font-size: 2rem;
     position: relative;
     color: black;
 }
 
-.braces > span > .fa-caret-right {
+.braces>span>.fa-caret-right {
     font-size: 2rem;
     position: relative;
     left: 25px;
     color: white;
 }
 
-.dropdown-nav > a{
+#dropdown-col {
+    padding-left: 8.5em;
+    padding-right: 0px;
+}
+
+.dropdown-nav>a {
     width: 11.2rem;
     border-radius: 1em;
     padding: 1.2px;
     background: #3a3737;
     border-color: #3a3737;
+    /* position: relative;
+    left: 7.7rem; */
 }
 
-.dropdown-nav > a > .fa-circle-user {
+.dropdown-nav>a>.fa-circle-user {
     font-size: 1.7rem;
     margin-right: 0.3em;
 }
@@ -166,21 +181,132 @@
     border-left: .4em solid transparent;
 }
 
-.dropdown-nav > a > span {
+.dropdown-nav>a>span {
     width: 7em;
 }
 
-.dropdown-nav > ul {
+.dropdown-nav>ul {
     width: 12.4em;
     border-radius: 0.3em;
     padding: 0.2em;
 }
 
-.dropdown-nav  ul  li > a {
+.dropdown-nav ul li>a {
     font-size: 0.875rem;
     padding: 10px 8px 10px 12px;
 }
 
-.dropdown-nav > ul > li > a > i {
+.dropdown-nav>ul>li>a>i {
     font-size: 18px;
+}
+
+#side-bar-icons>div:first-of-type {
+    padding-top: 2em;
+}
+
+#side-bar-icons>img:first-child:hover {
+    cursor: pointer;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div>span,
+.side-bar-nav>div:first-of-type>span {
+    font-size: 14px;
+    margin-left: 1.4em;
+    font-weight: bold;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div>span.align-self-end {
+    opacity: 0.7;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div:nth-of-type(4),
+#side-bar-icons>div:first-of-type>.col:first-child>div:nth-of-type(5) {
+    opacity: 0.7;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div:first-of-type>span {
+    opacity: 1;
+}
+
+.side-bar-nav>div:first-of-type {
+    opacity: 0.7;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div:nth-of-type(4):hover,
+#side-bar-icons>div:first-of-type>.col:first-child>div:nth-of-type(5):hover, 
+#side-bar-icons>div:first-of-type>.col:first-child>div>span:hover,
+.side-bar-nav>div:first-of-type:hover {
+    opacity: 1;
+    transition: opacity ease-in-out 0.15s;
+}
+
+.side-bar-nav>div:first-of-type:hover {
+    cursor: pointer;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div {
+    margin-bottom: 1.3em;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div:nth-of-type(4) {
+    margin-top: 2.7em;
+}
+
+#side-bar-icons>div:first-of-type>.col:first-child>div:hover {
+    cursor: pointer;
+}
+
+.sp-button {
+    padding: 8px 61px;
+    border-radius: 25px;
+    transition: background ease-in-out 0.15s, color ease-in-out 0.15s;
+}
+
+.sp-button:hover {
+    background-color: #3CD33C;
+    color: white;
+}
+
+.ln-button {
+    padding: 6px 69px;
+    border-radius: 25px;
+    transition: background ease-in-out 0.15s, color ease-in-out 0.15s;
+    color: white;
+    background-color: black;
+    border: 1px solid #ffffff;
+}
+
+.ln-button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.first-main > h2:first-child {
+    margin-left: 0.6em;
+    color: white;
+    font-family: "Gotham-Bold";
+    letter-spacing: -1.5px;
+}
+
+
+.list-cards > .row > .col > .card {
+    border: none;
+    width: 24.3em;
+}
+
+.list-cards > .row > .col > .card > .row > .col-md-4 {
+    width: fit-content;    
+}
+
+.list-cards > .row > .col > .card > .row > .col-md-4 > img {
+    height: 5em;
+}
+
+.list-cards > .row > .col > .card > .row > .col-md-8 {
+    height: 5em;
+    width: 19em;
+}
+
+.list-cards > .row > .col > .card > .row > .col-md-8 > p {
+    padding-left: 0.9em;
 }

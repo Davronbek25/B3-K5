@@ -5,3 +5,14 @@ window.onscroll = function() {
         document.getElementById("nav").classList.replace("nav-bg", 'transparent-bg')
     }
 }
+
+window.onload = () => {
+    let time = new Date()
+    time = time.getHours
+    let greeting = document.querySelector(".first-main > h2:first-child")
+    if(time > 5) {
+        greeting.innerHTML = "Good morning"
+    }else if(time > 12) {
+        greeting.innerHTML = "Good afternoon"
+    }else greeting.innerHTML = "Good evening"
+}
