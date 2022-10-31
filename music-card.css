@@ -1,0 +1,108 @@
+
+.custom-card {
+    background-color: #181818;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11.5rem;
+    height: 17.1rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.img-holder > img {
+    width: 9.5rem;
+    height: 9.5rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.text {
+    margin-top: 1rem;
+    line-height: 1;
+}
+.text h2 {
+    font-size: 1rem;
+}
+.text p {
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    font-weight: 500;
+    color: grey;
+    line-height: 1.6;
+}
+
+.play-icon {
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    transform: translateY(10px);
+    filter: drop-shadow(0 0.5rem 1rem rgb(0, 0, 0, 0.4));
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.custom-card:hover .play-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+.custom-card:hover {
+    background-color: #282828;
+}
+
+.circle {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: #1FDF64;
+    display: grid;
+    place-items: center;
+    transform: scale(0.95);
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+}
+.play-icon:hover .circle,
+.play-icon0:hover .circle {
+    cursor: auto;
+    transform: scale(1);
+}
+
+.list-cards > .row > .col > .card {
+    background-color: #181818;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.play-icon0 {
+    position: absolute;
+    top: 19%;
+    right: 3%;
+    /* transform: translateY(10px); */
+    /* filter: drop-shadow(0 0.5rem 1rem rgb(0, 0, 0, 0.4)); */
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.list-cards > .row > .col > .card:hover .play-icon0 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.list-cards > .row > .col > .card:hover {
+    background-color: #282828;
+}
+
+.custom-card > .text > h2 {
+    font-family: "Gotham-Black";
+}

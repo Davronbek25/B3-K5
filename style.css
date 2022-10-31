@@ -281,7 +281,8 @@
     color: black;
 }
 
-.first-main > h2:first-child {
+.first-main > h2:first-child,
+.second-main > h4:first-child {
     margin-left: 0.6em;
     color: white;
     font-family: "Gotham-Bold";
@@ -308,5 +309,6 @@
 }
 
 .list-cards > .row > .col > .card > .row > .col-md-8 > p {
-    padding-left: 0.9em;
+    padding-left: 0.85em;
+    font-family: "GothamMedium";
 }
