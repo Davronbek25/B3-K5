@@ -9,6 +9,7 @@ window.onscroll = function() {
 let eminem = []
 let billie = []
 let rihanna = []
+let songs = []
 
 const options = {
 	method: 'GET',
@@ -44,8 +45,74 @@ window.onload = () => {
         eminem = res[0].data
         billie = res[1].data
         rihanna = res[2].data
-        if(!res[0].data && !res[1].data && !res[2].data) {
+        songs = [eminem, billie, rihanna]
+        if(!res[0].data || !res[1].data || !res[2].data) {
             window.location.reload();
-        } 
+            console.log("hey")
+        }else {
+            let rows = document.querySelectorAll(".list-cards .row")
+            let rows2 = document.querySelectorAll(".second-main .row")
+            // console.log(rows)
+            rows.forEach((row, index) => {
+                for (let i = 0; i < 3; i++) {
+                    let random25 = index
+                    // console.log(songs[i][random25].album.cover_big)
+                    row.innerHTML += `
+                    <div class="col">
+                        <div class="card mb-3" style="max-width: 540px">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img
+                                src="${songs[i][random25].album.cover_big}"
+                                class="img-fluid rounded-start"
+                                alt="..."
+                            />
+                            </div>
+                            <div class="col-md-8 d-flex position-relative">
+                            <p class="card-text align-self-center ps-3 text-white m-0 w-75">
+                            ${songs[i][random25].title.substring(0,20)}
+                            </p>
+        
+                            <div class="play-icon0 shadow-sm">
+                                <div class="circle">
+                                <div class="triangle"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    `
+                }
+            })
+            // console.log(rows)
+            rows2.forEach(row => {
+                for (let j = 0; j < 2; j++) {
+                    for (let i = 0; i < 3; i++) {
+                        const random25 = i + j + 2
+                        // console.log(songs[i][random25].album.cover_big)
+                        row.innerHTML += `
+                        <div class="col">
+                            <div class="custom-card">
+                            <div class="img-holder">
+                                <img src="${songs[i][random25].album.cover_big}" alt="" />
+                            </div>
+                            <div class="text">
+                                <h2>${songs[i][random25].artist.name}</h2>
+                                <p>${songs[i][random25].title_short}</p>
+                            </div>
+                            <div class="play-icon">
+                                <div class="circle">
+                                <div class="triangle"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        `
+                    }
+                }
+            })
+            } 
     }).catch(err => console.log(err))
+
 }

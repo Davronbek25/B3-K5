@@ -4,7 +4,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     width: 11.5rem;
     height: 17.1rem;
     border-radius: 0.3rem;
@@ -27,13 +27,15 @@
 }
 .text h2 {
     font-size: 1rem;
+    font-family: "Gotham-Black";
 }
 .text p {
-    font-size: 0.9rem;
-    margin-top: 0.6rem;
+    font-size: 0.87rem;
+    margin-top: 0.3rem;
     font-weight: 500;
-    color: grey;
+    color: #B3B3B3;
     line-height: 1.6;
+    font-family: "GothamMedium";
 }
 
 .play-icon {
@@ -101,8 +103,4 @@
 
 .list-cards > .row > .col > .card:hover {
     background-color: #282828;
-}
-
-.custom-card > .text > h2 {
-    font-family: "Gotham-Black";
 }
