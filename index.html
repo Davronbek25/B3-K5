@@ -30,34 +30,38 @@
       <div class="container side-bar d-inline-flex justify-content-center">
         <div class="row d-flex flex-column w-100 pt-4">
           <div class="col" id="side-bar-icons">
-            <img src="/imgs/Spotify_Logo_RGB_White.png" style="height: 2.5em" />
+            <img
+              src="./imgs/Spotify_Logo_RGB_White.png"
+              style="height: 2.5em"
+            />
             <div class="row d-flex flex-column">
               <!-- SIDE BAR SECTIONS -->
               <div class="col">
                 <div class="d-flex">
-                  <img src="/imgs/home_spotify.png" alt="" height="21px" />
+                  <img src="./imgs/home_spotify.png" alt="" height="21px" />
                   <span class="text-white align-self-end">Home</span>
                 </div>
                 <div class="d-flex">
-                  <img src="/imgs/spotify_search.png" alt="" height="21px" />
+                  <img src="./imgs/spotify_search.png" alt="" height="21px" />
                   <span class="text-white align-self-end">Search</span>
                 </div>
                 <div class="d-flex">
-                  <img src="/imgs/spotify_library.png" alt="" height="21px" />
+                  <img src="./imgs/spotify_library.png" alt="" height="21px" />
                   <span class="text-white align-self-end">Your Library</span>
                 </div>
                 <div class="d-flex">
-                  <img src="/imgs/create-playlist.png" alt="" height="25px" />
+                  <img src="./imgs/create-playlist.png" alt="" height="25px" />
                   <span class="text-white">Create Playlist</span>
                 </div>
                 <div class="d-flex">
-                  <img src="/imgs/liked-songs.png" alt="" height="25px" />
+                  <img src="./imgs/liked-songs.png" alt="" height="25px" />
                   <span class="text-white">Liked Songs</span>
                 </div>
                 <hr class="text-white-50" />
               </div>
             </div>
           </div>
+
           <!-- SIDE BAR BUTTONS -->
           <div class="col d-flex mt-5 pt-5">
             <div class="side-bar-nav mt-4">
@@ -71,6 +75,7 @@
           </div>
         </div>
       </div>
+
       <!-- MAIN -->
       <div
         class="container-fluid g-0 main-bar changing-bg d-inline-flex flex-wrap"
@@ -106,7 +111,7 @@
 
                 <ul class="dropdown-menu dropdown-menu-dark">
                   <li>
-                    <a class="dropdown-item" href="/spotify-fonts.html"
+                    <a class="dropdown-item" href="./spotify-fonts.html"
                       >Account<i
                         class="fa-solid fa-arrow-up-right-from-square float-end position-relative top-50"
                       ></i
@@ -137,27 +142,72 @@
             </div>
           </div>
         </div>
+
         <!-- MAIN CONTENT SECTION -->
         <div class="container-fluid g-0" id="content-container">
           <!-- MAIN CONTENT SECTION PART1 -->
           <div class="container-fluid first-main">
             <h2 class="mt-3">Good afternoon</h2>
             <div class="list-cards container ms-2 mt-4">
-              <div class="row row-cols-3">
-              </div>
-              <div class="row row-cols-3">
-              </div>
+              <div class="row row-cols-3"></div>
+              <div class="row row-cols-3"></div>
             </div>
           </div>
+
           <!-- MAIN CONTENT SECTION PART2 -->
           <div class="container-fluid second-main">
             <h4 class="mt-0">Your top mixes</h4>
-            <div class="row row-cols-6 ms-2 mt-4">
-            </div>
+            <div class="row row-cols-6 ms-2 mt-4"></div>
           </div>
         </div>
       </div>
-      <div class="play-media"></div>
+
+      <!-- Media Players -->
+      <div class="play-media">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-between">
+            <div class="col-3 p-0">
+              <div class="row left-media-btm">
+                <div class="col-2 position-relative">
+                  <img
+                    src="./imgs/R-14815584-1582142083-5603.jpg"
+                    width=""
+                    class=""
+                    alt=""
+                  />
+                  <span
+                    ><img src="./imgs/spotify_cirle_indicator.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-2 ms-1 d-flex align-items-center p-0">
+                  <div>
+                    <h6 class="text-white">Runaway</h6>
+                    <p class="mb-0">AURORA</p>
+                  </div>
+                </div>
+                <div class="col-2 d-flex align-items-center p-0">
+                  <span
+                    ><img src="./imgs/spotify_like.png" alt="like" onclick="likeBtn()" /><img
+                      src="./imgs/spotify_picture-in-picture.png"
+                      alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 text-white middle-media-btm">
+              <div class="d-flex align-items-center">
+                <img src="./imgs/spotify_enable_shuffle.png" width="15"  alt="">
+                <img src="./imgs/spotify_previous.png" width="14"  alt="">
+                <img src="./imgs/spotify_play.png" width="32"  alt="">
+                <img src="./imgs/spotify_next.png" width="14"  alt="">
+                <img src="./imgs/spotify_enable-repeat.png" width="15"  alt="">
+              </div>
+              <div class="row"></div>
+            </div>
+            <div class="col-3 text-white">heoy</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>

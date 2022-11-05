@@ -1,144 +1,144 @@
-h1:nth-of-type(1) {
+body > div#spotify-fonts > h1:nth-of-type(1) {
     font-family: "Gotham-Black";
 }
 
-p:nth-of-type(1) {
+body > div#spotify-fonts > p:nth-of-type(1) {
     font-family: "Gotham-Black";
 }
 
-h1:nth-of-type(2) {
+body > div#spotify-fonts > h1:nth-of-type(2) {
     font-family: "Gotham-Bold";
 }
 
-p:nth-of-type(2) {
+body > div#spotify-fonts > p:nth-of-type(2) {
     font-family: "Gotham-Bold";
 }
 
-h1:nth-of-type(3) {
+body > div#spotify-fonts > h1:nth-of-type(3) {
     font-family: "Gotham-BookItalic";
 }
 
-p:nth-of-type(3) {
+body > div#spotify-fonts > p:nth-of-type(3) {
     font-family: "Gotham-BookItalic";
 }
 
-h1:nth-of-type(4) {
+body > div#spotify-fonts > h1:nth-of-type(4) {
     font-family: "Gotham-Light";
 }
 
-p:nth-of-type(4) {
+body > div#spotify-fonts > p:nth-of-type(4) {
     font-family: "Gotham-Light";
 }
 
-h1:nth-of-type(5) {
+body > div#spotify-fonts > h1:nth-of-type(5) {
     font-family: "Gotham-Thin";
 }
 
-p:nth-of-type(5) {
+body > div#spotify-fonts > p:nth-of-type(5) {
     font-family: "Gotham-Thin";
 }
 
-h1:nth-of-type(6) {
+body > div#spotify-fonts > h1:nth-of-type(6) {
     font-family: "Gotham-ThinItalic";
 }
 
-p:nth-of-type(6) {
+body > div#spotify-fonts > p:nth-of-type(6) {
     font-family: "Gotham-ThinItalic";
 }
 
-h1:nth-of-type(7) {
+body > div#spotify-fonts > h1:nth-of-type(7) {
     font-family: "Gotham-UltraItalic";
 }
 
-p:nth-of-type(7) {
+body > div#spotify-fonts > p:nth-of-type(7) {
     font-family: "Gotham-UltraItalic";
 }
 
-h1:nth-of-type(8) {
+body > div#spotify-fonts > h1:nth-of-type(8) {
     font-family: "Gotham-XLight";
 }
 
-p:nth-of-type(8) {
+body > div#spotify-fonts > p:nth-of-type(8) {
     font-family: "Gotham-XLight";
 }
 
-h1:nth-of-type(9) {
+body > div#spotify-fonts > h1:nth-of-type(9) {
     font-family: "Gotham-XLightItalic";
 }
 
-p:nth-of-type(9) {
+body > div#spotify-fonts > p:nth-of-type(9) {
     font-family: "Gotham-XLightItalic";
 }
 
-h1:nth-of-type(10) {
+body > div#spotify-fonts > h1:nth-of-type(10) {
     font-family: "GothamBold";
 }
 
-p:nth-of-type(10) {
+body > div#spotify-fonts > p:nth-of-type(10) {
     font-family: "GothamBold";
 }
 
-h1:nth-of-type(11) {
+body > div#spotify-fonts > h1:nth-of-type(11) {
     font-family: "GothamBoldItalic";
 }
 
-p:nth-of-type(11) {
+body > div#spotify-fonts > p:nth-of-type(11) {
     font-family: "GothamBoldItalic";
 }
 
-h1:nth-of-type(12) {
+body > div#spotify-fonts > h1:nth-of-type(12) {
     font-family: "GothamBook";
 }
 
-p:nth-of-type(12) {
+body > div#spotify-fonts > p:nth-of-type(12) {
     font-family: "GothamBook";
 }
 
-h1:nth-of-type(13) {
+body > div#spotify-fonts > h1:nth-of-type(13) {
     font-family: "GothamBookItalic";
 }
 
-p:nth-of-type(13) {
+body > div#spotify-fonts > p:nth-of-type(13) {
     font-family: "GothamBookItalic";
 }
 
-h1:nth-of-type(14) {
+body > div#spotify-fonts > h1:nth-of-type(14) {
     font-family: "GothamLight";
 }
 
-p:nth-of-type(14) {
+body > div#spotify-fonts > p:nth-of-type(14) {
     font-family: "GothamLight";
 }
 
-h1:nth-of-type(15) {
+body > div#spotify-fonts > h1:nth-of-type(15) {
     font-family: "GothamLightItalic";
 }
 
-p:nth-of-type(15) {
+body > div#spotify-fonts > p:nth-of-type(15) {
     font-family: "GothamLightItalic";
 }
 
-h1:nth-of-type(16) {
+body > div#spotify-fonts > h1:nth-of-type(16) {
     font-family: "GothamMedium";
 }
 
-p:nth-of-type(16) {
+body > div#spotify-fonts > p:nth-of-type(16) {
     font-family: "GothamMedium";
 }
 
-h1:nth-of-type(17) {
+body > div#spotify-fonts > h1:nth-of-type(17) {
     font-family: "GothamMedium_1";
 }
 
-p:nth-of-type(17) {
+body > div#spotify-fonts > p:nth-of-type(17) {
     font-family: "GothamMedium_1";
 }
 
-h1:nth-of-type(18) {
+body > div#spotify-fonts > h1:nth-of-type(18) {
     font-family: "GothamMediumItalic";
 }
 
-p:nth-of-type(18) {
+body > div#spotify-fonts > p:nth-of-type(18) {
     font-family: "GothamMediumItalic";
 }
 
@@ -232,6 +232,6 @@ p:nth-of-type(18) {
     src: url("Gotham-Spotify-Font/GothamMedium_1.ttf");
 }
 
-div {
+body > div#spotify-fonts {
     height: fit-content;
 }
