@@ -64,10 +64,10 @@
 
           <!-- SIDE BAR BUTTONS -->
           <div class="col d-flex mt-5 pt-5">
-            <div class="side-bar-nav mt-4">
-              <button class="sp-button">Sign Up</button>
-              <button class="ln-button mt-3">Login</button>
-              <div class="d-flex mt-4">
+            <div class="side-bar-nav mt-4 d-flex">
+              <!-- <button class="sp-button">Sign Up</button>
+              <button class="ln-button mt-3">Login</button> -->
+              <div class="d-flex mb-3 align-self-end">
                 <i class="fa-regular fa-circle-down fs-4 text-white"></i>
                 <span class="text-white">Install App</span>
               </div>
@@ -194,17 +194,43 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 text-white middle-media-btm">
+            <div class="col-6 middle-media-btm">
               <div class="d-flex align-items-center">
                 <img src="./imgs/spotify_enable_shuffle.png" width="15"  alt="">
                 <img src="./imgs/spotify_previous.png" width="14"  alt="">
-                <img src="./imgs/spotify_play.png" width="32"  alt="">
+                <img src="./imgs/spotify_play.png" onclick="handlePlay()" width="32"  alt="">
                 <img src="./imgs/spotify_next.png" width="14"  alt="">
                 <img src="./imgs/spotify_enable-repeat.png" width="15"  alt="">
               </div>
-              <div class="row"></div>
+              <div class="progressContainer d-flex align-items-center position-relative">
+                <span class="currentTime">00:00</span>
+                <div id="progress-bar-btm" onclick="handleProgressBarClick(event)">
+                  <div 
+                  class="progress-bar-in"
+                  >
+                  <!-- <span class="progress-circle"></span> -->
+                    <audio></audio>
+                  </div>
+                </div>
+                <span class="duration">00:00</span>
+              </div>
             </div>
-            <div class="col-3 text-white">heoy</div>
+            <div class="col-3 text-white right-media-btm">
+              <div class="d-flex align-items-center h-100">
+                <img src="./imgs/spotify_lyrics.png" alt="lyrics">
+                <img src="./imgs/spotify_queue.png" alt="queue">
+                <img src="./imgs/spotify_connect-to-device.png" alt="connect to a device">
+                <img src="./imgs/spotify_mute.png" alt="mute">
+                <input
+                  type="range"
+                  value="100"
+                  onchange="handleChangeVolume(event)"
+                />
+                <img src="./imgs/spotify_full-screen.png" alt="full screen">
+                <!-- <span class="progress-circle"></span> -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
