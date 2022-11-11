@@ -54,7 +54,8 @@ window.onload = () => {
         let random25 = index;
         // console.log(songs[i][random25].album.cover_big)
         row.innerHTML += `
-                <div class="col">
+                <div class="col" onclick="playSong(this.id)" id="${
+          songs[i][random25].id}">
                     <div class="card mb-3" style="max-width: 540px">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -88,7 +89,7 @@ window.onload = () => {
           const random25 = i + j + 2;
           // console.log(songs[i][random25].album.cover_big)
           row.innerHTML += `
-                    <div class="col">
+                    <div class="col" onclick="playSong(this.id)" id="${songs[i][random25].id}">
                         <div class="custom-card">
                         <div class="img-holder">
                             <img src="${songs[i][random25].album.cover_big}" alt="" />
@@ -108,12 +109,22 @@ window.onload = () => {
         }
       }
     });
+
+    const songIdStored = localStorage.getItem("songId");
+    const prevSong = songs.forEach((artist) =>
+      artist.find((song) => song.id === parseInt(songIdStored))
+    );
+    if(songIdStored && prevSong) {
+      setPlayedBtm(prevSong)
+    }else {
+      setPlayedBtm(songs[0][0])
+    }
   };
 
   // let songsStored = window.localStorage.getItem(songsStored)
   let songsStored = JSON.parse(window.localStorage.getItem("songsStored"));
   // localStorage.removeItem("songsStored")
-  // console.log(songsStored[0], "songsStored")
+  console.log(songsStored[0], "songsStored")
   if (songsStored) {
     cardsMaker(songsStored);
   } else {

@@ -433,7 +433,7 @@
 }
 
 .progress-bar-in {
-    width: 50%;
+    width: 0;
     background-color: white;
     height: 100%;
     border-radius: 0.25rem;
@@ -497,6 +497,10 @@
     -webkit-appearance: none;
     width: 0px;
     box-shadow: -47px 0 0 47px white;
+}
+
+.muteSlider {
+    box-shadow: -47px 0 0 47px #414141;
 }
 
 .right-media-btm > div:first-child > input:first-of-type:hover::-webkit-slider-thumb {

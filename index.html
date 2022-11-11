@@ -180,7 +180,7 @@
                   /></span>
                 </div>
                 <div class="col-2 ms-1 d-flex align-items-center p-0">
-                  <div>
+                  <div class="left-media-btm-text">
                     <h6 class="text-white">Runaway</h6>
                     <p class="mb-0">AURORA</p>
                   </div>
@@ -220,7 +220,7 @@
                 <img src="./imgs/spotify_lyrics.png" alt="lyrics">
                 <img src="./imgs/spotify_queue.png" alt="queue">
                 <img src="./imgs/spotify_connect-to-device.png" alt="connect to a device">
-                <img src="./imgs/spotify_mute.png" alt="mute">
+                <img id="spotify-speaker" src="./imgs/spotify_mute.png" onclick="handleMute(event)" alt="mute">
                 <input
                   type="range"
                   value="100"
@@ -236,6 +236,7 @@
       </div>
     </div>
 
+    <script src="music-player.js"></script>
     <script src="index.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
