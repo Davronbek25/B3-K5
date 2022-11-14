@@ -54,8 +54,7 @@ window.onload = () => {
         let random25 = index;
         // console.log(songs[i][random25].album.cover_big)
         row.innerHTML += `
-                <div class="col" onclick="playSong(this.id)" id="${
-          songs[i][random25].id}">
+                <div class="col">
                     <div class="card mb-3" style="max-width: 540px">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -71,8 +70,13 @@ window.onload = () => {
                         </p>
     
                         <div class="play-icon0 shadow-sm">
-                            <div class="circle">
-                            <div class="triangle"></div>
+                            <div class="circle" onclick="playSong(this.id)" id="${
+                              songs[i][random25].id}">
+                              <div class="triangle"></div>
+                              <div class="twoLine d-none">
+                                <div class="firstL"></div>
+                                <div class="secondL"></div>
+                              </div>
                             </div>
                         </div>
                         </div>
@@ -86,10 +90,10 @@ window.onload = () => {
     rows2.forEach((row) => {
       for (let j = 0; j < 2; j++) {
         for (let i = 0; i < 3; i++) {
-          const random25 = i + j + 2;
+          const random25 = i + j + 3;
           // console.log(songs[i][random25].album.cover_big)
           row.innerHTML += `
-                    <div class="col" onclick="playSong(this.id)" id="${songs[i][random25].id}">
+                    <div class="col">
                         <div class="custom-card">
                         <div class="img-holder">
                             <img src="${songs[i][random25].album.cover_big}" alt="" />
@@ -99,8 +103,12 @@ window.onload = () => {
                             <p>${songs[i][random25].title_short}</p>
                         </div>
                         <div class="play-icon">
-                            <div class="circle">
-                            <div class="triangle"></div>
+                            <div class="circle" onclick="playSong(this.id)" id="${songs[i][random25].id}">
+                              <div class="triangle"></div>
+                              <div class="twoLine d-none">
+                                <div class="firstL"></div>
+                                <div class="secondL"></div>
+                              </div>
                             </div>
                         </div>
                         </div>
@@ -124,7 +132,7 @@ window.onload = () => {
   // let songsStored = window.localStorage.getItem(songsStored)
   let songsStored = JSON.parse(window.localStorage.getItem("songsStored"));
   // localStorage.removeItem("songsStored")
-  console.log(songsStored[0], "songsStored")
+  // console.log(songsStored[0], "songsStored")
   if (songsStored) {
     cardsMaker(songsStored);
   } else {

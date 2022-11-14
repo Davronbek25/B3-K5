@@ -74,6 +74,18 @@
     transform: rotate(90deg);
     margin-left: 0.2rem;
 }
+
+.twoLine {
+    display: flex;
+    justify-content: space-between;
+    width: 15px;
+}
+
+.firstL, .secondL {
+    width: 4px;
+    height: 19px;
+    background: black;
+}
 .play-icon:hover .circle,
 .play-icon0:hover .circle {
     cursor: auto;

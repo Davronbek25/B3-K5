@@ -4,6 +4,7 @@ let mute = false
 let prevVolume = 1
 let speakerStatus
 let range
+// let pauseCircle = document
 
 window.addEventListener("DOMContentLoaded", () => {
     range = document.querySelector(".right-media-btm > div:first-child > input[type='range']")
@@ -25,10 +26,42 @@ window.addEventListener("DOMContentLoaded", () => {
 const playSong = (id) => {
     let song2 = JSON.parse(window.localStorage.getItem("songsStored")).map(artist => artist.find(song => song.id === parseInt(id)))
     song = song2.filter(s => Object.prototype.toString.call(s) === '[object Object]')[0]
-    audio.src = song.preview
     playIcon.src = "./imgs/spotify_pause.png";
     setPlayedBtm(song)
     localStorage.setItem("songId", song.id)
+    audio.src = song.preview
+    // let circleCard = document.getElementById(id)
+    // let playCircle = circleCard.querySelector(".triangle")
+    // let pauseCircle = circleCard.querySelector(".twoLine")
+    // let anonymous = function() {
+    //     if(audio.played.length > 0){
+    //         if(audio.paused) {
+    //             playIcon.src = "imgs/spotify_pause.png"
+    //             pauseCircle.classList.toggle("d-none")
+    //             playCircle.classList.toggle("d-none")
+    //             audio.play()
+    //             console.log('playing')
+    //         }else {
+    //             playIcon.src = "imgs/spotify_play.png"
+    //             playCircle.classList.toggle("d-none")
+    //             pauseCircle.classList.toggle("d-none")
+    //             audio.pause()
+    //             console.log("paused")
+    //         }
+    //     }else {
+    //         playIcon.src = "imgs/spotify_pause.png"
+    //         playCircle.classList.toggle("d-none")
+    //         pauseCircle.classList.toggle("d-none")
+    //         audio.play()
+    //         console.log("played a new")
+    //     }
+    // }
+    // async function myFunction() {
+    //     audio.src = await song.preview
+    //     anonymous()
+    // }
+
+    // myFunction()
     audio.play()
 }
 
